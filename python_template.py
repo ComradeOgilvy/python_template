@@ -115,7 +115,11 @@ def main(arguments):
         Parse the remaining configuration options into a configuration dictionary
         """
         # config = {}
-        # config[value] = cfg.get("","")
+        # try:
+        #     config[value] = cfg.get("","")
+        # except(configparser.NoSectionError, configparser.NoOptionError) as e:
+        #     logging.exception("Could not parse configuration option [%s]", str(e))
+        #     raise
 
         """
         Start counting the time and start application
