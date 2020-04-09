@@ -1,12 +1,12 @@
 # Python Template
 
-Python template than can be used to develop advanced applications.
+Python template which can be used to develop advanced applications.
 
 ## Features
 
-- parsing configuration file
+- arg-parsing a configuration file
 - formatted logging into file
-  - start time
-  - duration
-  - end time
-- helper functions for simple shell commands
+  - with start time, duration and end time
+- helper function for calling simple shell commands
+- handle exceptions during initialization & execution
+- exit codes
