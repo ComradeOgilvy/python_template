@@ -61,7 +61,7 @@ def _launch_command(command:list):
 Main Logic
 - describe main logic here
 """
-def _main():
+def _main(config):
 
     return 0
 
@@ -114,7 +114,7 @@ def main(arguments):
         """
         Parse the remaining configuration options into a configuration dictionary
         """
-        # config = {}
+        config = {}
         # try:
         #     config[value] = cfg.get("","")
         # except(configparser.NoSectionError, configparser.NoOptionError) as e:
@@ -133,7 +133,7 @@ def main(arguments):
             """
             start main logic
             """
-            exit_status = _main()
+            exit_status = _main(config)
         except Exception as e:
             exit_status = 3
             logging.exception("Execution failed: %s", str(e))
